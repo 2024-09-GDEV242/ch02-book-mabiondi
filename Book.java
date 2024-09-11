@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
     
     /**
      * Set all of the fields when this object
@@ -24,6 +25,7 @@ class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        borrowed = 0;
     }
     
     /**
@@ -69,6 +71,7 @@ class Book
     /**
      * 2.87 Print method for book details
      * 2.89 Modified method to print reference number if length > 0
+     * 2.91 Modified method to print number of times book has been borrowed
      */
     public void printDetails()
     {
@@ -84,6 +87,7 @@ class Book
         {
             System.out.println("ZZZ");
         }
+        System.out.println("Number of Times Borrowed: " + borrowed);
     }
     
     /**
@@ -108,5 +112,21 @@ class Book
     public String getRefNumber()
     {
         return refNumber;
+    }
+    
+    /**
+     * 2.91 Mutator for borrow count (increases by 1 each time book is borrowed)
+     */
+    public void borrow()
+    {
+        borrowed++;
+    }
+    
+    /**
+     * 2.91 Accessor for borrow count
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
     }
 }
