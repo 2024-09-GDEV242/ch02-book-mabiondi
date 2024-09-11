@@ -68,12 +68,22 @@ class Book
     
     /**
      * 2.87 Print method for book details
+     * 2.89 Modified method to print reference number if length > 0
      */
     public void printDetails()
     {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
+        System.out.print("Reference Number: ");
+        if(refNumber.length() > 0)
+        {
+            System.out.println(refNumber);
+        }
+        else
+        {
+            System.out.println("ZZZ");
+        }
     }
     
     /**
