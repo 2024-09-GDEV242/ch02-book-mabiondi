@@ -37,4 +37,20 @@ class Book
     {
         return title;
     }
+    
+    /**
+     * 2.84 Print method for author field
+     */
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    
+    /**
+     * 2.84 Print method for title field
+     */
+    public void printTitle()
+    {
+        System.out.println(title);
+    }
 }
