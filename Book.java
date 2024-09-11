@@ -21,6 +21,20 @@ class Book
         author = bookAuthor;
         title = bookTitle;
     }
-
-    // Add the methods here ...
+    
+    /**
+     * 2.83 Accessor for author field
+     */
+    public String getAuthor()
+    {
+        return author;
+    }
+    
+    /**
+     * 2.83 Accessor for title field
+     */
+    public String getTitle()
+    {
+        return title;
+    }
 }
