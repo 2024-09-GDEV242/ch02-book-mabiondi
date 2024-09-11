@@ -88,10 +88,18 @@ class Book
     
     /**
      * 2.88 Mutator for ref number
+     * 2.90 Modified to only accept a string of length >= 3
      */
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+        if(ref.length() >= 3)
+        {
+            refNumber = ref;
+        }
+        else
+        {
+            System.out.println("ERROR: Reference number must be at least 3 characters long.");
+        }
     }
     
     /**
